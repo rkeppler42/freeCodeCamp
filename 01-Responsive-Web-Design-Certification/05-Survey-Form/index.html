@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas illo enim et cupiditate
+        delectus perferendis vero, repudiandae cumque. Atque expedita sunt minima aliquid. Maiores nam odio non,
+        voluptate dignissimos sit.</p>
+    <form action="https://register-demo.freecodecamp.org" id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Enter your name: <input type="text" name="name" id="name" required
+                    placeholder="Joe Doe"></label>
+            <label for="email" id="email-label">Enter your email: <input type="email" name="email" id="email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="joedoe@email.com"></label>
+            <label for="number" id="number-label">Enter your number: <input type="number" name="number" id="number"
+                    required min="1900" max="2020" placeholder="1991"> </label>
+            <label for="radio"><input type="radio" name="radio" id="radio" value="personal">Personal</label>
+            <label for="radio"><input type="radio" name="radio" id="radio" value="work">Work</label>
+            <div class="check">
+                <label for=""><input type="checkbox" value="checkbox">A</label>
+                <label for=""><input type="checkbox" value="checkbox">B</label>
+                <label for=""><input type="checkbox" value="checkbox">C</label>
+            </div>
+            <label for="more-info">More info:
+                <textarea name="more-info" id="more-info"></textarea>
+            </label>
+            <select name="dropdown" id="dropdown">
+                <option value="1">Ok!</option>
+                <option value="2">Not ok!</option>
+            </select>
+            <label for="submit">Submit <input type="submit" value="Submit" id="submit"></label>
+        </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+body {
+    background-color: #F5AA69;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    display: block;
+    margin-top: 2px;
+}
+
+label[for="radio"],
+select {
+    margin: 10px 0;
+}
